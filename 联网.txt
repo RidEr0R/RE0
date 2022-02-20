@@ -1,0 +1,29 @@
+[RoutingRule]
+DOMAIN,m.baidu.com,PROXY
+DOMAIN,imgbb.com,PROXY
+FINAL,DIRECT
+
+[RoutingDomainStrategy]
+AsIs
+
+[FreedomDomainStrategy]
+AsIs
+
+[LocalPolicy]
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
+
+[DnsServer]
+114.114.114.114
+[DnsRule]
+[DnsHost]
+[DnsClientIp]
+[Log]
+loglevel = none
+[PerAppVpn]
+[PerAppMode]
+[PerAppAllow]
+[PerAppDisallow]
